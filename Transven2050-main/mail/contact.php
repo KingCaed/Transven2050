@@ -31,6 +31,7 @@ if (isset($_POST ['send'])) {
     $mail = @mail($email, $subject, $message, $header);
     if ($mail) {
       echo "<h2> Email enviado exitosamente</h2>";
+      redirect("../contact.html");
     }
   }
 }
