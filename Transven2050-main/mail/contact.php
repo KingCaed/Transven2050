@@ -28,7 +28,7 @@ if (isset($_POST ['send'])) {
     $header = "From: gabrieldasilva8542@gmail.com" . "\r\n";
     $header.= "Reply-To: gabrieldasilva8542@gmail.com" . "\r\n";
     $header.= "X-Mailer: PHP/". phpversion();
-    $mail = @mail($email, $subject, $message, $header);
+    $mail = mail($email, $subject, $message, $header);
     if ($mail) {
       echo "<h2> Email enviado exitosamente</h2>";
       redirect("../contact.html");
