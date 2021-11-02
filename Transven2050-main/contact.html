@@ -164,25 +164,27 @@
                         <div class="col-md-6">
                             <div class="contact-form">
                                 <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+
+                                                    <!-- id="contactForm"  novalidate="novalidate"--> 
+                                <form name="sentMessage"  method="post" action="./mail/contact.php">
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Nombre" required="required" data-validation-required-message="Por favor, ingresa tu nombre" />
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required="required" data-validation-required-message="Por favor, ingresa tu nombre" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Correo" required="required" data-validation-required-message="Por favor, ingresa tu email" />
+                                        <input type="email" class="form-control" id="email"  name="email" placeholder="Correo" required="required" data-validation-required-message="Por favor, ingresa tu email" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Por favor, ingresa el asunto" />
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto" required="required" data-validation-required-message="Por favor, ingresa el asunto" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Por favor, ingresa el mensaje"></textarea>
+                                        <textarea class="form-control" id="message" name="subject" placeholder="Mensaje" required="required" data-validation-required-message="Por favor, ingresa el mensaje"></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Enviar Mensaje</button>
+                                        <input class="btn" type="submit" name="send" id="sendMessageButton"></input>
                                     </div>
                                 </form>
                             </div>
