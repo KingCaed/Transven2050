@@ -689,6 +689,19 @@ a:focus {
     }
 }
 
+@media (min-width: 990px) {
+
+    .feature .feature-item {
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 990px) {
+
+    .feature .feature-item {
+        min-height: 320px;
+    }
+}
 
 /*******************************/
 /********** Fact CSS ***********/
@@ -2101,6 +2114,41 @@ a:focus {
     padding: 0;
     list-style-type: none;
 }
+
+/*******************************/
+/******* Proyectos CSS *********/
+/*******************************/
+
+
+
+.project-card {
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.card-1{
+    background-image: url('../img/images-constructions/vaporizador-ambiental.jpg');
+    background-position: top;
+}
+
+.card-2{
+    background-image: url('../img/images-constructions/Proyecto2.jpg');
+}
+
+.card-3{
+    background-image: url('../img/images-constructions/fabrica1.jpg');
+}
+
+/* .projects:nth-child(1) {
+    background-image: url('../img/images-constructions/fabrica1.jpg');
+    
+} */
+
 
 
 /*******************************/
