@@ -246,7 +246,6 @@ a:focus {
 }
 
 @media (min-width: 992px) {
-
     .nav-bar {
         padding: 0 75px;
     }
@@ -268,7 +267,10 @@ a:focus {
         font-size: 15px;
         text-transform: uppercase;
     }
+
 }
+
+
 
 @media (max-width: 991.98px) {
     .nav-bar .navbar {
@@ -703,6 +705,77 @@ a:focus {
     }
 }
 
+.lb-data .lb-number {
+    visibility: hidden;
+}
+
+.lb-closeContainer {
+    position: relative;
+    right: 0;
+    top: 215px;
+}
+
+.lightbox {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.lightbox .lb-image {
+    border: none;
+    max-width: 360px;
+}
+
+
+.lb-dataContainer {
+    background-color: #f7ad1a;
+    min-height: 216px;
+}
+
+.lb-data .lb-caption {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.lb-caption {
+    color: #030f27;
+    position: absolute;
+    display: block;
+    width: 340px;
+    padding: 15px;
+}
+
+@media (min-width: 992px) {
+
+    .lb-closeContainer {
+        position: static;
+    }
+
+    .lb-outerContainer {
+        margin: 0;
+        width: 400px;
+    }
+
+    .lb-dataContainer {
+        margin: 0;
+    }
+
+    .lightbox {
+        flex-direction: row;
+        justify-content: center;
+        /* display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(10, 1fr); */
+    }
+
+    .lightbox .lb-image {
+        border: none;
+        max-width: 400px;
+        max-height: 450px;
+    }
+
+}
+
 /*******************************/
 /********** Fact CSS ***********/
 /*******************************/
@@ -795,7 +868,7 @@ a:focus {
 
 .service .service-img img {
     width: 100%;
-    max-height: 263px;
+    max-height: 216px;
 }
 
 .service .service-overlay {
