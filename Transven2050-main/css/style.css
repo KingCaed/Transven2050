@@ -575,7 +575,7 @@ a:focus {
     justify-content: center;
 }
 
-.feature .feature-icon::before {
+/* .feature .feature-icon::before {
     position: absolute;
     content: "";
     width: 80px;
@@ -585,9 +585,9 @@ a:focus {
     border: 2px dotted #ffffff;
     border-radius: 60px;
     z-index: 1;
-}
+} */
 
-.feature .feature-icon::after {
+/* .feature .feature-icon::after {
     position: absolute;
     content: "";
     width: 79px;
@@ -597,7 +597,7 @@ a:focus {
     background: #030f27;
     border-radius: 60px;
     z-index: 2;
-}
+} */
 
 .feature .col-md-12:nth-child(2n) .feature-icon::after {
     background: #fdbe33;
@@ -611,6 +611,36 @@ a:focus {
     line-height: 60px;
     z-index: 3;
 }
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.happy-icon {
+    background-image: url('../img/icons/happy-face.png');
+}
+
+.truck-icon {
+    background-image: url('../img/icons/camion.png');
+    width: 64px;
+    height: 62px;
+}
+
+.crane-truck-icon {
+    background-image: url('../img/icons/crane-truck.png');
+    width: 64px;
+    height: 64px;
+}
+
+.truck-machine-icon {
+    background-image: url('../img/icons/maquina-elevadora.png');
+}
+
 
 .feature .feature-text {
     padding-left: 30px;
@@ -694,16 +724,17 @@ a:focus {
 @media (min-width: 990px) {
 
     .feature .feature-item {
-        min-height: 400px;
+        min-height: 420px;
     }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 1100px) {
 
     .feature .feature-item {
-        min-height: 320px;
+        min-height: 350px;
     }
 }
+
 
 .lb-data .lb-number {
     visibility: hidden;
